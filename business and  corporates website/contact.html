@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZVM Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Ensure the body and html stretch to full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        /* The main content should take up as much space as possible */
+        main {
+            flex: 1;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: linear-gradient(to right, #4b0082, #800080);
+            height: 80px;
+            margin: 0;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgb(255, 253, 253);
+        }
+
+        body {
+            padding-top: 100px;
+            background: url('bg.jpg') rgb(66, 37, 70);
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            padding-bottom: 100px;
+        }
+
+        .navbar-title-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-title-container h1 {
+            margin-left: 15px;
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        .navbar-title-container p {
+            margin-left: 10px;
+            font-style: italic;
+            color: #fff;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: rgb(255, 255, 255) !important;
+        }
+
+        .navbar .navbar-nav .nav-link:hover,
+        .navbar .navbar-nav .nav-link.active {
+            color: white !important;
+        }
+
+        footer {
+            background: linear-gradient(to right, #4b0082, #800080);
+            text-align: center;
+            padding: 1px;
+            margin-top: auto; /* Pushes the footer down */
+            margin-bottom: -100px;
+            
+        }
+
+        /* Custom styling for the back button */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .back-btn i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <div class="navbar-title-container">
+                <div>
+                    <h1 class="text-white">ZVM</h1>
+                    <p class="text-white">BUSINESS AND CORPORATES</p>
+                </div>
+            </div>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Sidebar -->
+            <div class="sidebar offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome ZVM / B&C WEBSITES</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">OWNER'S NAME</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">NAME OF THE COMPANY</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">EMAIL</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">CONTACT NUMBER</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">LOCATION</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">BRANCHES</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="page" href="javascript:history.back()">
+                                    <i class="bi bi-arrow-left-circle-fill"></i> Back
+                                </a>
+                            </li>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main content wrapped in main tag -->
+    <main>
+        <!-- Contact Information Section -->
+        <div class="container py-5">
+            <h2 class="text-center mb-4">CONTACT INFORMATION</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Company Details</h4>
+                    <ul class="list-unstyled">
+                        <li><strong>Owner:</strong> ZACK VINCENT MAGADO </li>
+                        <li><strong>Company Name:</strong> BUSINESS AND CORPORATES</li>
+                        <li><strong>Email:</strong> zackmagado@gmail.com</li>
+                        <li><strong>Contact Number:</strong> +97 203 302 203</li>
+                        <li><strong>Location:</strong> ROSAL ST. PAYATAS A QC</li>
+                    </ul>
+
+                    <h4>Our Branches</h4>
+                    <ul class="list-unstyled">
+                        <li><strong>Branch 1:</strong> MAKATI</li>
+                        <li><strong>Branch 2:</strong> QUEZON CITY</li>
+                        <li><strong>Branch 3:</strong> TAGUIG</li>
+                        <li><strong>Branch 4:</strong> PASAY</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form Section -->
+                <div class="col-md-6">
+                    <h4>Contact Us</h4>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 ZVM / BUSINESS AND CORPORATES. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
